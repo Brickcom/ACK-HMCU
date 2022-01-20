@@ -12,6 +12,9 @@ Then, make sure current branch is 'SDK3' and copy 'numicro_m031' folder in this 
 Please download ACK_Device_SDK_4 package from ACK developer resource.<br>
 Then, switch to 'master' branch and copy 'numicro_m031' or others folder in this repository into <Path-to-ACK_Device_SDK4>\user\platform\.
 
+## Datssheet
+* [ITM-1261-ACK Datasheet](Datasheet_ITM-1261-ACK_V01.pdf)
+
 ## Document
 * [ACK HMCU NuTiny-NUC1261S Quick-Start guide (EN)](Development-manual-ITM-1261_JP.pdf)
 * [ACK HMCU NuTiny-NUC1261S Quick-Start guide (JP)](Development-manual-ITM-1261_EN.pdf)
