@@ -27,4 +27,4 @@ Then, switch to 'master' branch and copy 'numicro_m031' or others folder in this
 
 [![Alexa APP ACK HMCU with Lamp Board.](ACK-demo.jpg)](https://www.youtube.com/watch?v=extXuO7HH3Y)
 
-[![Alexa APP ACK HMCU with Demo Board.]ACK-demo2.jpg)](https://www.youtube.com/watch?v=Tc6thsA8ylg&feature=youtu.be)
+[![Alexa APP ACK HMCU with Demo Board.](ACK-demo2.jpg)](https://www.youtube.com/watch?v=Tc6thsA8ylg&feature=youtu.be)
