@@ -174,7 +174,7 @@ static void uart_irq(struct nu_uart_var *psNuUartVar)
 
 void UART02_IRQHandler(void)
 {
-    uart_irq(&uart0_var);
+//    uart_irq(&uart0_var);
     uart_irq(&uart2_var);
 }
 

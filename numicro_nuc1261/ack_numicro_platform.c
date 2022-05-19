@@ -155,15 +155,19 @@ void ACKPlatform_SetDigitalPinPWMLevel(ACKHardwarePin_t pin, uint8_t val)
     S_PWMDev *psPwmDev = &g_asBoardPwmDev[pin];
 
     if (val)
+    {
         psPwmDev->dutycycle = (float)(val + 1) * 100 / 256;
+		ACKPlatform_WriteLightPin(eUserGPIODev_ACK_LowActionLight, 0);
+		ACKPlatform_WriteLightPin(eUserGPIODev_ACK_HighActionLight, 1);
+    }
     else
+    {
         psPwmDev->dutycycle = 0;
+		ACKPlatform_WriteLightPin(eUserGPIODev_ACK_LowActionLight, 1);
+		ACKPlatform_WriteLightPin(eUserGPIODev_ACK_HighActionLight, 0);
+    }
 
     ACK_DEBUG_PRINT_I("pin=%d, value=%d -> freq=%d(Hz), dutycycle=%d(%%)", pin, val, psPwmDev->frequency, psPwmDev->dutycycle);
-    if (val)
-			ACKPlatform_WriteLightPin(eUserGPIODev_ACK_LightPowerOn, 0);
-    else
-			ACKPlatform_WriteLightPin(eUserGPIODev_ACK_LightPowerOn, 1);
     HAL_PWM_Start(psPwmDev);
 }
 

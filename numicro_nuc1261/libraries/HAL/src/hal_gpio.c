@@ -369,6 +369,7 @@ int gpio_read(S_GPIODev *dev)
  */
 int32_t HAL_GPIO_Initialize(S_GPIODev *dev)
 {
+	volatile uint8_t state;
     if (!dev)
         goto exit_hal_gpio_initialize;
 
@@ -398,7 +399,15 @@ int32_t HAL_GPIO_Initialize(S_GPIODev *dev)
         gpio_dir(dev, PIN_INPUT);
         gpio_pullctrl(dev, PullNone);
         break;
-
+		
+    case eGPIO_OUTPUT_PUSH_PULL_INIT_LOW:
+				gpio_write(dev, 0);
+        gpio_mode(dev, PushPull);
+        break;
+    case eGPIO_OUTPUT_PUSH_PULL_INIT_HIGH:
+				gpio_write(dev, 1);
+        gpio_mode(dev, PushPull);
+        break;
     case eGPIO_OUTPUT_PUSH_PULL:
 //              gpio_dir ( obj, PIN_OUTPUT );
         gpio_mode(dev, PushPull);

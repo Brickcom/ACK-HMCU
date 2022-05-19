@@ -16,15 +16,10 @@ Then, switch to 'master' branch and copy 'numicro_m031' or others folder in this
 * [ITM-1261-ACK Datasheet](Datasheet_ITM-1261-ACK_V01.pdf)
 
 ## Document
-* [ACK HMCU NuTiny-NUC1261S Quick-Start guide (EN)](Development-manual-ITM-1261_JP.pdf)
-* [ACK HMCU NuTiny-NUC1261S Quick-Start guide (JP)](Development-manual-ITM-1261_EN.pdf)
+* [ACK-Carrier_manuel_v1.3](ACK-Carrier_manuel_v1.3.pptx)
 
 ## Resources
 * [Download ACK_Device_SDK](https://developer.amazon.com/alexa/console/ack/resources)
 
 ### Demonstration Video Clips
 [![ACK Module Device Registration using Alexa APP](APP-demo.jpg)](https://www.youtube.com/watch?v=Ugrlai0J_Lw)
-
-[![Alexa APP ACK HMCU with Lamp Board.](ACK-demo.jpg)](https://www.youtube.com/watch?v=extXuO7HH3Y)
-
-[![Alexa APP ACK HMCU with Demo Board.](ACK-demo2.jpg)](https://www.youtube.com/watch?v=Tc6thsA8ylg&feature=youtu.be)

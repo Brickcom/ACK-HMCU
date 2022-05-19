@@ -23,9 +23,10 @@ const int i32BoardMaxGPIONum  = sizeof(g_asBoardGpioDev) / sizeof(g_asBoardGpioD
 
 S_GPIODev g_asBoardUserGpioDev [] =
 {
-    { .pin = (PinName)P32,    .gpio_type = eGPIO_OUTPUT_PUSH_PULL }, //Alexa-connected indictor
-    { .pin = (PinName)P31,       .gpio_type = eGPIO_INPUT_PULL_UP }, //Restor factory setting?
-    { .pin = (PinName)P33, 		.gpio_type = eGPIO_OUTPUT_PUSH_PULL }, //eUserGPIODev_ACK_LightPowerOn
+    { .pin = (PinName)P32,    .gpio_type = eGPIO_OUTPUT_PUSH_PULL 			}, //Alexa-connected indictor
+    { .pin = (PinName)P31,    .gpio_type = eGPIO_INPUT_PULL_UP 				}, //Restor factory setting?
+    { .pin = (PinName)P33, 	  .gpio_type = eGPIO_OUTPUT_PUSH_PULL 			}, //Alexa Low Action Light
+	{ .pin = (PinName)P36, 	  .gpio_type = eGPIO_OUTPUT_PUSH_PULL_INIT_LOW	}, //Alexa High Action Light
 };
 const int i32BoardMaxUserGPIONum  = sizeof(g_asBoardUserGpioDev) / sizeof(g_asBoardUserGpioDev[0]);
 
